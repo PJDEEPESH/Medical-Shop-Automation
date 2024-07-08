@@ -1,0 +1,88 @@
+ body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-image: url("../images/bg.png");
+	background-color: #78e4ff;
+	background-repeat: no-repeat;
+	background-size: 80% auto; /* Adjusted size to 80% of the width and auto height */
+	background-position: center center; /* Center the background image */
+}
+
+.container {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center; /* Center the content horizontally */
+	height: 720px;
+}
+
+.indexbox {
+	width: 320px;
+	height: auto;
+	padding: 30px 30px;
+	box-sizing: border-box;
+	background: rgba(255, 250, 250, 0.85);
+	margin: 0 auto;
+	text-align: center; /* Center the content inside the box */
+}
+
+h2 {
+	margin: 0 auto;
+	padding: 0 0 40px;
+	color: #2f4f4f;
+	font-size: 22px;
+}
+ 
+.indexbox button {
+	width: 100%;
+	margin-bottom: 40px;
+}
+ 
+.button1 {
+	position: relative; /* Corrected 'relative' spelling */
+	align: center;
+	border: none;
+	outline: none;
+	height: 40px;
+	width: 64%;
+	color: #fff;
+	font-size: 18px;
+	background: #090adc;
+	cursor: pointer;
+	border-radius: 20px;	
+}
+ 
+.button1:hover {
+	color: #262626;
+	background: #04e4e4;
+}
+
+/* Responsive settings for smaller screens */
+@media (max-width: 768px) {
+	body {
+		background-size: cover; /* Ensure the image covers the entire background on small screens */
+	}
+
+	.container {
+		width: 100%;
+		height: auto;
+		padding: 20px;
+	}
+	
+	.indexbox {
+		width: 90%;
+		padding: 20px;
+	}
+	
+	.button1 {
+		width: 80%;
+	}
+}
+
+/* Extra settings for very large screens */
+@media (min-width: 1200px) {
+	body {
+		background-size: 100% 100%; /* Ensure the image covers the entire background on very large screens */
+	}
+}
